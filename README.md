@@ -12,7 +12,7 @@
 
     a. Desktop Version
 
-<img src="./app/images/ss-desktop.png"></img>
+<img src="./app/images/ss-after-desktop.png"></img>
 
     b. Mobile Version
     b. Error Message
