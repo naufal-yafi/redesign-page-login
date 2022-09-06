@@ -46,3 +46,14 @@ $hInput: 50px;
         border: 2px solid $main;
     }
 }
+
+@mixin input-err {
+    @include input-style();
+    background: $bg-err;
+    color: $txt-err;
+    border: 1px solid $txt-err;
+    
+    &:focus {
+        border: 2px solid $txt-err;
+    }
+}

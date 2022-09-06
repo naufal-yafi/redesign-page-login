@@ -11,8 +11,15 @@
     <link rel="shortcut icon" href="./../../app/images/logo.png" type="image/x-icon">
 </head>
 <body>
-    
-    <div class="container">
+
+    <div class="alert">
+        <div class="pict"></div>
+        <p>ID pengguna atau Kata sandi yang anda masukkan mungkin salah!!!</p>
+        <div class="pict close-alert">
+            <img src="./../../app/images/x-circle.png" alt="">
+        </div>
+    </div>
+    <form class="container" method="post">
         <header>
             <img src="./../../app/images/logo.png" alt="logo stmik widya pratama">
             <div class="text">
@@ -23,13 +30,13 @@
 
         <main>
             <div class="group">
-                <label for="id_user">ID Pengguna</label>
-                <input type="text" id="id_user" name="id_user">
+                <label class="l-inp" for="id_user">ID Pengguna</label>
+                <input class="inp" type="text" id="id_user" name="id_user" maxlength="30">
             </div>
             
             <div class="group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                <label class="l-inp" for="password">Kata Sandi</label>
+                <input class="inp" type="password" id="password" name="password" maxlength="12">
                 <p>Lupa kata sandi?</p>
             </div>
 
@@ -44,7 +51,9 @@
         <footer>
             <button>MASUK</button>
         </footer>
-    </div>
+    </form>
+
+    <script src="./../js/app.js" type="module"></script>
 
 </body>
 </html>

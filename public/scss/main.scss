@@ -16,6 +16,42 @@ body {
     background: $bg;
 }
 
+.alert {
+    @include all-center;
+    justify-content: space-between;
+    @include input-label;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    color: $txt-err;
+    background: $bg-err;
+    transition: .5s;
+    transform: translateY(-120px);
+
+    .pict {
+        @include all-center;
+        width: 80px;
+        height: 80px;
+        
+        &.close-alert {
+            cursor: pointer;
+        }
+        
+        img {
+            width: 40%;
+        }
+    }
+
+    p {
+        margin-right: 1rem;
+    }
+
+}
+
 .container {
     width: 85%;
     height: auto;
@@ -110,5 +146,15 @@ footer {
         width: 50%;
         height: $hInput;
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .alert {
+        .pict {
+            img {
+                width: 100%;
+            }
+        }
     }
 }

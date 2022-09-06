@@ -33,3 +33,9 @@
     font-size: 14.5px;
     color: $label;
 }
+
+@mixin input-label-err {
+    @include body-text();
+    font-size: 14.5px;
+    color: $txt-err;
+}
