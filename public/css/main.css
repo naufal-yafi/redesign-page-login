@@ -283,6 +283,7 @@ footer button:hover {
     text-align: center;
   }
   header img {
+    margin: 0;
     width: 4rem;
     height: auto;
   }
