@@ -22,6 +22,10 @@
 
     b. Mobile Version
 
+<p align="end">
+    <a href="./public/scss/_responsive_design.scss">« responsive code »</a>
+</p>
+
 <img src="./app/images/ss-after-mobile.png"></img>
 
 <h4>Feature :</h4>
