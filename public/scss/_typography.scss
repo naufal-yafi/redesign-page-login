@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Montserrat-Reguler;
+    src: url('./../../app/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('./../../app/fonts/Montserrat-Bold.ttf');
+}
+
+@mixin header {
+    font-family: Montserrat-Bold;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: $txt;
+}

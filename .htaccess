@@ -1,0 +1,5 @@
+Options -Indexes
+DirectoryIndex public/page/login.php
+
+RewriteEngine on 
+RewriteRule ^login$ public/page/login.php 

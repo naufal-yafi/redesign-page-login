@@ -1,0 +1,17 @@
+@import './color_palette';
+@import './mixin';
+@import './typography';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include all-center;
+    width: 100%;
+    height: 100vh;
+    @include header;
+    background: $bg;
+}
