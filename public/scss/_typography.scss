@@ -8,9 +8,28 @@
     src: url('./../../app/fonts/Montserrat-Bold.ttf');
 }
 
-@mixin header {
+@mixin heading1 {
     font-family: Montserrat-Bold;
     font-size: 35px;
     letter-spacing: 4px;
     color: $txt;
+}
+
+@mixin heading2 {
+    @include heading1();
+    font-family: Montserrat-Reguler;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+@mixin body-text {
+    @include heading2();
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+@mixin input-label {
+    @include body-text();
+    font-size: 14.5px;
+    color: $label;
 }

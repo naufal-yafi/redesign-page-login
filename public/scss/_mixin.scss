@@ -1,5 +1,48 @@
+$rounded: .5rem;
+$hInput: 50px;
+
 @mixin all-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin btn-eff {
+    border-radius: $rounded;
+    border: none;
+    transition: .5s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+}
+
+@mixin btn-primary {
+    @include btn-eff();
+    color: $bg;
+    background: $main;
+}
+
+@mixin btn-off {
+    @include btn-eff();
+    color: $label;
+    background: $bg-label;
+}
+
+@mixin input-style {
+    @include body-text;
+    border: none;
+    outline: none;
+    border-radius: $rounded;
+    width: 100%;
+    height: $hInput;
+    margin-top: .5rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    border: 1px solid $label;
+            
+    &:focus {
+        border: 2px solid $main;
+    }
 }
