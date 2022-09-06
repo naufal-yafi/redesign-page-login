@@ -3,6 +3,7 @@
 @import './typography';
 
 * {
+    overflow: hidden;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
 
 .container {
     width: 85%;
-    height: 90vh;
+    height: auto;
 }
 
 header {
@@ -27,7 +28,7 @@ header {
     
     img {
         margin-right: 2rem;
-        height: 7.5rem;
+        height: 6rem;
     }
 
     .name {
@@ -42,21 +43,22 @@ header {
 main {
     @include all-center;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 4rem;
 
     .group {
         @include all-center;
         flex-direction: column;
         align-items: flex-start;
-        width: 80%;
+        width: 50%;
         height: 80px;
-        margin-bottom: .8rem;
+        margin-bottom: 2rem;
         
         &:nth-child(3) {
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 0;
+            margin-top: 1rem;
 
             button {
                 @include input-label;
@@ -70,6 +72,8 @@ main {
                     @include btn-primary;
                 }
             }
+        } &:nth-child(2) {
+            height: 120px;
         }
 
         label {
@@ -78,6 +82,18 @@ main {
 
         input {
             @include input-style;
+        }
+
+        p {
+            cursor: pointer;
+            @include all-center;
+            @include body-text;
+            margin-top: 1rem;
+            letter-spacing: 1px;
+            font-size: 16px;
+            color: $main;
+            justify-content: flex-end;
+            width: 100%;
         }
     }
 }
@@ -91,7 +107,7 @@ footer {
     button {
         @include body-text;
         @include btn-primary;
-        width: 80%;
+        width: 50%;
         height: $hInput;
         font-weight: 600;
     }

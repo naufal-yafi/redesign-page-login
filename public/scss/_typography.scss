@@ -10,7 +10,7 @@
 
 @mixin heading1 {
     font-family: Montserrat-Bold;
-    font-size: 35px;
+    font-size: 25px;
     letter-spacing: 4px;
     color: $txt;
 }
@@ -18,8 +18,8 @@
 @mixin heading2 {
     @include heading1();
     font-family: Montserrat-Reguler;
-    font-size: 20px;
-    letter-spacing: 8px;
+    font-size: 14px;
+    letter-spacing: 6.8px;
 }
 
 @mixin body-text {
