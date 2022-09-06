@@ -1,6 +1,8 @@
 
 export default class Alert {
-    containerAlert = document.querySelector('.alert')
+    constructor(containerAlert) {
+        this['containerAlert'] = containerAlert
+    }
 
     unhide() {
         this['containerAlert'].style.transform = 'translateY(0px)'

@@ -33,11 +33,19 @@
     a. Popup Alert
 
 <p align="end">
-    <a href="./public/js/class/Alert.js">« javascript »</a> 
+    <a href="./public/js/class/PopupAlert.js">« javascript »</a> 
     &nbsp;&nbsp;&nbsp;
     <a href="./public/scss/component/_popup_alert.scss">« scss »</a>
 </p>
 
 <img src="./app/videos/alert.gif" width="600px"></img>
 
-    b. Button
+    b. Button Trigger
+
+<p align="end">
+    <a href="./public/js/class/ButtonTrigger.js">« javascript »</a> 
+    &nbsp;&nbsp;&nbsp;
+    <a href="./public/scss/component/_button_style.scss">« scss »</a>
+</p>
+
+<img src="./app/videos/button.gif" width="600px"></img>

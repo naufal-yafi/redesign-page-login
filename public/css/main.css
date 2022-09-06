@@ -1,6 +1,10 @@
 :root {
-  --bg-err: #fcbaba;
-  --txt-err: #961c1c;
+  --main: #2A57F8;
+  --bg: #FFFFFF;
+  --label: #828698;
+  --bg-label: #DFE0E4;
+  --bg-err: $bg-err;
+  --txt-err: $txt-err;
 }
 
 @font-face {
@@ -129,7 +133,10 @@ main .group:nth-child(3) {
   align-items: center;
   flex-direction: row;
 }
-main .group:nth-child(3) button {
+main .group:nth-child(3) .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Montserrat-Bold;
   font-size: 25px;
   letter-spacing: 4px;
@@ -151,18 +158,18 @@ main .group:nth-child(3) button {
   height: 50px;
   letter-spacing: 2px;
 }
-main .group:nth-child(3) button:hover {
+main .group:nth-child(3) .button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-main .group:nth-child(3) button.mhs {
+main .group:nth-child(3) .button.mhs {
   border: none;
   border-radius: 0.5rem;
   transition: 0.5s;
   color: #FFFFFF;
   background: #2A57F8;
 }
-main .group:nth-child(3) button.mhs:hover {
+main .group:nth-child(3) .button.mhs:hover {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -313,12 +320,12 @@ footer button:hover {
     height: auto;
     flex-direction: column;
   }
-  main .group.sel button {
+  main .group.sel .button {
     width: 100%;
     height: 35px;
     margin-bottom: 0.5rem;
   }
-  main .group.sel button:nth-child(4) {
+  main .group.sel .button:nth-child(4) {
     margin: 0;
   }
   main .group label {
