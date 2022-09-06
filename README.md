@@ -22,6 +22,8 @@
 
     b. Mobile Version
 
+<img src="./app/images/ss-after-mobile.png"></img>
+
 <h4>Feature :</h4>
 
     a. Popup Alert

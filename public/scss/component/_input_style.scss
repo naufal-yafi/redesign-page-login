@@ -17,15 +17,3 @@
         border: 2px solid $main;
     }
 }
-
-@mixin input-err {
-    @include input-style;
-    
-    border: 1px solid $txt-err;
-    background: $bg-err;
-    color: $txt-err;
-    
-    &:focus {
-        border: 2px solid $txt-err;
-    }
-}

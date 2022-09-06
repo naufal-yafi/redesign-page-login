@@ -138,12 +138,4 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .alert {
-        .pict {
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
+@import './responsive_design';

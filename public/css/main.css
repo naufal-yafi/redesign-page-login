@@ -259,8 +259,77 @@ footer button:hover {
   opacity: 0.8;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .alert .pict img {
     width: 100%;
+  }
+  main .group {
+    width: 80%;
+  }
+  footer button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    padding-top: 1rem;
+    align-items: flex-start;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  header img {
+    width: 4rem;
+    height: auto;
+  }
+  header .name {
+    margin-top: 0.8rem;
+    font-size: 14px;
+  }
+  header .service {
+    font-size: 8px;
+    line-height: 16px;
+  }
+  main {
+    margin-top: 1rem;
+  }
+  main .group {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  main .group:nth-child(2) {
+    height: 90px;
+  }
+  main .group.sel {
+    height: auto;
+    flex-direction: column;
+  }
+  main .group.sel button {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 0.5rem;
+  }
+  main .group.sel button:nth-child(4) {
+    margin: 0;
+  }
+  main .group label {
+    font-size: 12px;
+  }
+  main .group input {
+    font-size: 12px;
+    height: 35px;
+  }
+  main .group p {
+    font-size: 13px;
+  }
+  footer button {
+    width: 100%;
+    font-size: 13px;
+    height: 45px;
+    letter-spacing: 4px;
   }
 }/*# sourceMappingURL=main.css.map */
