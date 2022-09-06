@@ -1,0 +1,31 @@
+@mixin input-style {
+    @include body-text;
+    
+    margin-top: .5rem;
+    padding: 0 1rem;
+    
+    font-weight: 600;
+    
+    width: 100%;
+    height: $hInput;        
+    border: none;
+    outline: none;
+    border-radius: $rounded;
+    border: 1px solid $label;
+
+    &:focus {
+        border: 2px solid $main;
+    }
+}
+
+@mixin input-err {
+    @include input-style;
+    
+    border: 1px solid $txt-err;
+    background: $bg-err;
+    color: $txt-err;
+    
+    &:focus {
+        border: 2px solid $txt-err;
+    }
+}

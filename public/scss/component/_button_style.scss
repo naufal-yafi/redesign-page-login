@@ -1,0 +1,25 @@
+@mixin btn-eff {
+    border: none;
+    border-radius: $rounded;
+    
+    transition: .5s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+}
+
+@mixin btn-primary {
+    @include btn-eff;
+
+    color: $bg;
+    background: $main;
+}
+
+@mixin btn-off {
+    @include btn-eff;
+    
+    color: $label;
+    background: $bg-label;
+}

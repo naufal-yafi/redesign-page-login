@@ -3,54 +3,23 @@
 @import './typography';
 
 * {
-    overflow: hidden;
     padding: 0;
     margin: 0;
+
+    overflow: hidden;
+
     box-sizing: border-box;
 }
 
 body {
     @include all-center;
+
     width: 100%;
     height: 100vh;
     background: $bg;
 }
 
-.alert {
-    @include all-center;
-    justify-content: space-between;
-    @include input-label;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    font-weight: 600;
-    color: $txt-err;
-    background: $bg-err;
-    transition: .5s;
-    transform: translateY(-120px);
-
-    .pict {
-        @include all-center;
-        width: 80px;
-        height: 80px;
-        
-        &.close-alert {
-            cursor: pointer;
-        }
-        
-        img {
-            width: 40%;
-        }
-    }
-
-    p {
-        margin-right: 1rem;
-    }
-
-}
+@import './component/popup_alert';
 
 .container {
     width: 85%;
@@ -59,11 +28,13 @@ body {
 
 header {
     @include all-center;
+
     width: 100%;
     height: auto;
     
     img {
         margin-right: 2rem;
+
         height: 6rem;
     }
 
@@ -71,6 +42,7 @@ header {
         @include heading1;
     } .service {
         @include heading2;
+
         margin-top: .4rem;
     }
 
@@ -78,31 +50,39 @@ header {
 
 main {
     @include all-center;
-    flex-direction: column;
+    
     margin-top: 4rem;
+
+    flex-direction: column;
 
     .group {
         @include all-center;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 50%;
-        height: 80px;
+        
         margin-bottom: 2rem;
         
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 50%;
+        height: 80px;
+        
         &:nth-child(3) {
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
             margin-bottom: 0;
             margin-top: 1rem;
 
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
             button {
                 @include input-label;
-                letter-spacing: 2px;
                 @include btn-off;
+
                 padding: 0 1rem;
+                
                 width: 23%;
                 height: $hInput;
+                letter-spacing: 2px;
 
                 &.mhs {
                     @include btn-primary;
@@ -121,14 +101,19 @@ main {
         }
 
         p {
-            cursor: pointer;
             @include all-center;
             @include body-text;
+
             margin-top: 1rem;
-            letter-spacing: 1px;
-            font-size: 16px;
-            color: $main;
+            
             justify-content: flex-end;
+            
+            cursor: pointer;
+            
+            font-size: 16px;
+            letter-spacing: 1px;
+            
+            color: $main;
             width: 100%;
         }
     }
@@ -136,16 +121,20 @@ main {
 
 footer {
     @include all-center;
-    width: 100%;
+    
     margin-top: 2rem;
+    
+    width: 100%;
     height: auto;
 
     button {
         @include body-text;
         @include btn-primary;
+
+        font-weight: 600;
+        
         width: 50%;
         height: $hInput;
-        font-weight: 600;
     }
 }
 

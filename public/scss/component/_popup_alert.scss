@@ -1,0 +1,40 @@
+.alert {
+    @include all-center;
+    @include input-label;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    
+    justify-content: space-between;
+    
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    color: $txt-err;
+    background: $bg-err;
+    
+    transition: .5s;
+    transform: translateY(-120px);
+
+    .pict {
+        @include all-center;
+        
+        width: 80px;
+        height: 80px;
+        
+        &.close-alert {
+            cursor: pointer;
+        }
+        
+        img {
+            width: 40%;
+        }
+    }
+
+    p {
+        margin-right: 1rem;
+    }
+
+}
