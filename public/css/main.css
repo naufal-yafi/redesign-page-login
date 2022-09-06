@@ -261,7 +261,7 @@ footer button:hover {
 
 @media screen and (max-width: 1000px) {
   .alert .pict img {
-    width: 100%;
+    width: 40%;
   }
   main .group {
     width: 80%;
@@ -274,6 +274,9 @@ footer button:hover {
   body {
     padding-top: 1rem;
     align-items: flex-start;
+  }
+  .alert .pict img {
+    width: 100%;
   }
   header {
     display: flex;
@@ -292,7 +295,8 @@ footer button:hover {
     font-size: 14px;
   }
   header .service {
-    font-size: 8px;
+    font-size: 9px;
+    letter-spacing: 4px;
     line-height: 16px;
   }
   main {

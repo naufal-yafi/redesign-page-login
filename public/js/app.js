@@ -1,14 +1,14 @@
 
-import NotifAlert from './class/Alert.js'
+import Alert from './class/PopupAlert'
 
-// Module Inisiliate
+// Module initialization
 const 
-    notif = new NotifAlert()
+    popupAlert = new Alert()
 
 // DOM
 const 
     btn_closeAlert = document.querySelector('.pict.close-alert')
 
 btn_closeAlert.addEventListener('click',()=>{
-    notif.hide()
+    popupAlert.hide()
 })

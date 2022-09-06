@@ -1,5 +1,5 @@
 
-export default class NotifAlert {
+export default class Alert {
     containerAlert = document.querySelector('.alert')
 
     unhide() {

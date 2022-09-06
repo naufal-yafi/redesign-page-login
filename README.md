@@ -12,13 +12,13 @@
 
 <h4>Before :</h4>
 
-<img src="app/images/ss-before.png"></img>
+<img src="app/images/ss-before.png" width="600px"></img>
 
 <h4>After :</h4>
 
     a. Desktop Version
 
-<img src="./app/images/ss-after-desktop.png"></img>
+<img src="./app/images/ss-after-desktop.png" width="600px"></img>
 
     b. Mobile Version
 
@@ -26,7 +26,7 @@
     <a href="./public/scss/_responsive_design.scss">« responsive code »</a>
 </p>
 
-<img src="./app/images/ss-after-mobile.png"></img>
+<img src="./app/images/ss-after-mobile.png" width="300px"></img>
 
 <h4>Feature :</h4>
 
@@ -37,5 +37,7 @@
     &nbsp;&nbsp;&nbsp;
     <a href="./public/scss/component/_popup_alert.scss">« scss »</a>
 </p>
+
+<img src="./app/videos/alert.gif" width="600px"></img>
 
     b. Button
