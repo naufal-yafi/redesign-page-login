@@ -13,6 +13,8 @@
         }
 
         $lvl = strtolower($_POST['lv_user']);
+
+        $sql = mysqli_query($conn,"SELECT * FROM user where id_user='$id' && password='$psw';");
     
     }
 ?>

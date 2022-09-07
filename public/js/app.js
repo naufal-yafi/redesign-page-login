@@ -19,7 +19,7 @@ const
 // Run
 btn_closeAlert.addEventListener('click',()=>popupAlert.hide())
 
-btnPimpinan.addEventListener('click',()=>{triggerButton.automation(btnPimpinan)})
-btnDosen.addEventListener('click',()=>{triggerButton.automation(btnDosen)})
-btnOrtu.addEventListener('click',()=>{triggerButton.automation(btnOrtu)})
-btnMhs.addEventListener('click',()=>{triggerButton.automation(btnMhs)})
+btnPimpinan.addEventListener('click',()=>triggerButton.automation(btnPimpinan))
+btnDosen.addEventListener('click',()=>triggerButton.automation(btnDosen))
+btnOrtu.addEventListener('click',()=>triggerButton.automation(btnOrtu))
+btnMhs.addEventListener('click',()=>triggerButton.automation(btnMhs))

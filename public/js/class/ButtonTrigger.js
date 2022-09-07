@@ -20,25 +20,25 @@ export default class Button {
     }
     
     automation(obj) {
-        const data = [
+        const container = [
             this['btnPimpinan'],
             this['btnDosen'],
             this['btnOrtu'],
             this['btnMhs']
         ]
 
-        const lData = [
+        const label = [
             document.querySelector('label.lR.pim'),
             document.querySelector('label.lR.dos'),
             document.querySelector('label.lR.ort'),
             document.querySelector('label.lR.mhs')
         ]
 
-        for (let i = 0; i < data.length; i++) {
-            if (obj != data[i]) {
-                this.disable(data[i],lData[i])
+        for (let i = 0; i < container.length; i++) {
+            if (obj != container[i]) {
+                this.disable(container[i],label[i])
             } else {
-                this.enable(data[i],lData[i])
+                this.enable(container[i],label[i])
             }
         }
     }
