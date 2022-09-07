@@ -1,22 +1,11 @@
 <?php
+    session_start();
     $BASE_URL = './../../app';
 
     include "$BASE_URL/php/connectDB.php";
     include "$BASE_URL/php/component.php";
-    
-    if (isset($_POST['login'])){
-        $id = $_POST['id_user'];
-        $psw = $_POST['pswd_user'];
 
-        if (isset($_POST['lv_user']) == NULL) {
-            $_POST['lv_user'] = 'mahasiswa';
-        }
-
-        $lvl = strtolower($_POST['lv_user']);
-
-        $sql = mysqli_query($conn,"SELECT * FROM user where id_user='$id' && password='$psw';");
-    
-    }
+    include "$BASE_URL/php/action.php";
 ?>
 
 <?=starting(
@@ -24,11 +13,13 @@
     "./../css/main.css",
     "$BASE_URL/images/logo.png"
 )?>
-    
-    <?=popupAlert(
-        "ID pengguna atau Kata sandi yang anda masukkan mungkin salah!!!",
-        "$BASE_URL/images/x-circle.png"
-    )?>
+
+    <div class='alert zonk'>
+        <div class='pict'></div>
+        <p></p>
+        <div class='pict close-alert'>
+        </div>
+    </div>
 
     <form class="container" method="post">
         <?=stmikHeader("$BASE_URL/images/logo.png")?>

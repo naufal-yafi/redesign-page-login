@@ -16,7 +16,14 @@
     background: $bg-err;
     
     transition: .5s;
-    transform: translateY(-120px);
+    transform: translateY(0px);
+
+    &.zonk {
+        display: none;
+        img {
+            display: none;
+        }
+    }
 
     .pict {
         @include all-center;

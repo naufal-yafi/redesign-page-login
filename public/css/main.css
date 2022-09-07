@@ -57,7 +57,13 @@ body {
   color: #961c1c;
   background: #fcbaba;
   transition: 0.5s;
-  transform: translateY(-120px);
+  transform: translateY(0px);
+}
+.alert.zonk {
+  display: none;
+}
+.alert.zonk img {
+  display: none;
 }
 .alert .pict {
   display: flex;
