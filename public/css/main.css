@@ -292,10 +292,6 @@ footer button:hover {
   }
 }
 @media screen and (max-width: 900px) {
-  body {
-    padding-top: 1rem;
-    align-items: flex-start;
-  }
   .alert .pict img {
     width: 100%;
   }
