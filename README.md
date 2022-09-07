@@ -5,10 +5,13 @@
 </p>
 
 <h4>Assets :</h4>
+&nbsp;&nbsp;&nbsp; <a href="./public/page/login.php">• 🖥️ Login Page Code</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="./app/php/component.php">• 📦 Components</a> <br>
 &nbsp;&nbsp;&nbsp; <a href="./app/fonts">• 🖋️ Fonts</a> <br>
 &nbsp;&nbsp;&nbsp; <a href="./app/images">• 📷 Images</a> <br>
 &nbsp;&nbsp;&nbsp; <a href="./public/scss/component/_button_style.scss">• 🖱️ Button Style</a> <br>
 &nbsp;&nbsp;&nbsp; <a href="./public/scss/component/_input_style.scss">• ⌨️  Input Style</a> <br>
+&nbsp;&nbsp;&nbsp; <a href="./app/php/component.php">• 🪛 Main Javascript Code</a> <br>
 
 <h4>Before :</h4>
 
