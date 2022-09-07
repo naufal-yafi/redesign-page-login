@@ -1,0 +1,1 @@
+<?php header('location:./public/page/login.php?login-now'); ?>

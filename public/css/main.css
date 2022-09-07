@@ -162,6 +162,20 @@ main .group:nth-child(3) .button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
+main .group:nth-child(3) .button .inpR {
+  display: none;
+}
+main .group:nth-child(3) .button label.lR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+main .group:nth-child(3) .button label.lR.mhs {
+  color: #FFFFFF;
+}
 main .group:nth-child(3) .button.mhs {
   border: none;
   border-radius: 0.5rem;

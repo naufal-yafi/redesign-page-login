@@ -85,6 +85,20 @@ main {
                 height: $hInput;
                 letter-spacing: 2px;
 
+                .inpR {
+                    display: none;
+                }
+
+                label.lR {
+                    @include all-center;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    &.mhs {
+                        color: $bg;
+                    }
+                }
+
                 &.mhs {
                     @include btn-primary;
                 }
