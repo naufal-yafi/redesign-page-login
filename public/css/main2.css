@@ -1,0 +1,127 @@
+:root {
+  --main: #2A57F8;
+  --bg: #FFFFFF;
+  --label: #828698;
+  --bg-label: #DFE0E4;
+  --bg-err: $bg-err;
+  --txt-err: $txt-err;
+}
+
+@font-face {
+  font-family: Montserrat-Reguler;
+  src: url("./../../app/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("./../../app/fonts/Montserrat-Bold.ttf");
+}
+* {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #828698;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 10%;
+  border-radius: 0.5rem;
+  background: #fff;
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #252B4B;
+  font-family: Montserrat-Reguler;
+  font-size: 14px;
+  letter-spacing: 6.8px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  letter-spacing: 1px;
+}
+.card .say {
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #252B4B;
+  margin-bottom: 2rem;
+}
+.card img {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.card .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #252B4B;
+  font-family: Montserrat-Reguler;
+  font-size: 14px;
+  letter-spacing: 6.8px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  width: 100%;
+  height: auto;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+.card .group label {
+  margin-bottom: 0.5rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+.card .button {
+  font-family: Montserrat-Bold;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #252B4B;
+  font-family: Montserrat-Reguler;
+  font-size: 14px;
+  letter-spacing: 6.8px;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  color: #FFFFFF;
+  background: #2A57F8;
+  padding: 0.8rem 4rem;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.card .button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .card .say {
+    font-size: 18px;
+  }
+  .card .group label {
+    font-size: 13px;
+  }
+  .card .button {
+    margin-top: 0;
+    font-size: 13px;
+    padding: 1rem 4rem;
+  }
+}/*# sourceMappingURL=main2.css.map */

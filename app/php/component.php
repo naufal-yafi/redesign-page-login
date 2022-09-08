@@ -71,6 +71,33 @@
         </div>
         ";
     }
+
+    function card($id_user,$name_user,$lvl_user) {
+        return "
+        <form class='container' method='post'>
+            <div class='card'>
+                <div class='say'>Selamat Datang</div>
+                <img src='./../images/profile-icon.jpg' alt=''>
+
+                <div class='group'>
+                    <label for=''>ID Pengguna: &nbsp;</label>
+                    <div>$id_user</div>
+                </div>
+
+                <div class='group'>
+                    <label for=''>Nama Pengguna: &nbsp;</label>
+                    <div>$name_user</div>
+                </div>
+
+                <div class='group'>
+                    <label for=''>Sebagai: &nbsp;</label>
+                    <div>$lvl_user</div>
+                </div>
+
+                <input type='submit' value='Keluar' name='log-out' class='button'>
+            </div>
+        </form>";
+    }
     
     // function triggerButton($get,$name) {
     //     return "

@@ -3,6 +3,7 @@
     if (isset($_POST['login'])){
         $id = $_POST['id_user'];
         $psw = $_POST['pswd_user'];
+        $num = rand(1,100);
     
         if (isset($_POST['lv_user']) == NULL) {
             $_POST['lv_user'] = 'mahasiswa';
@@ -20,14 +21,18 @@
                 );
         } else {
             if ($data['level'] == 'mahasiswa' && $lvl == 'orang tua'){
-                echo "<script>alert('Login sebagai orang tua dari $data[username]')</script>";
+                $_SESSION['id'] = $data['id_user'];
+                $_SESSION['val'] = $num;
+                header("location:./../../app/respon/index.php?val=$num&&idc=ort");
             } elseif ($data['level'] != 'mahasiswa' && $lvl == 'orang tua') {
                 echo popupAlert(
                     "Tidak bisa login sebagai orang tua karena anda bukan mahasiswa!!!",
                     "$BASE_URL/images/x-circle.png"
                 );
             } else {
-                echo "<script>alert('Kamu adalah $data[username], sebagai $data[level]')</script>";
+                $_SESSION['id'] = $data['id_user'];
+                $_SESSION['val'] = $num;
+                header("location:./../../app/respon/index.php?val=$num&&idc=nort");
             }
         }
     }
